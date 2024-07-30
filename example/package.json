@@ -1,0 +1,38 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "switch:2": "v-cast 2.7 vue2.7 && vue-demi-switch 2.7 vue2.7",
+    "switch:3": "v-cast 3 vue3 && vue-demi-switch 3 vue3",
+    "dev:2": "pnpm switch:2 && vite",
+    "dev:3": "pnpm switch:3 && vite",
+    "test:2": "pnpm switch:2 && vitest",
+    "test:3": "pnpm switch:3 && vitest",
+    "build:2": "pnpm switch:2 && vite build",
+    "build:3": "pnpm switch:3 && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "happy-dom": "^14.12.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "4.0.0-beta.2",
+    "vitest": "^2.0.4",
+    "vue": "npm:vue-caster@0.1.1",
+    "vue-demi": "^0.14.10",
+    "vue-tsc": "^2.0.24",
+    "vue2.6": "npm:vue@2.6.11",
+    "vue2.7": "npm:vue@2.7.16",
+    "vue3": "npm:vue@3.4.34"
+  },
+  "dependencies": {
+    "@vue/test-utils": "^2.4.6",
+    "vue-test-utils1": "npm:@vue/test-utils@1"
+  }
+}
