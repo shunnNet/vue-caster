@@ -3,6 +3,7 @@
   - [How this works?](#how-this-works)
   - [Usage](#usage)
   - [Why](#why)
+  - [TODO](#todo)
   - [License](#license)
 
 This is a command line tool that can switch between Vue versions. It can be used in conjunction with [vue-demi](https://github.com/vueuse/vue-demi) for developing components compatible with both Vue 2 and Vue 3.
@@ -25,23 +26,18 @@ npm install -D vue@npm:vue-caster vue-demi
 
 ```bash
 npm install vue2.7@npm:vue@2.7.16
-npm install vue2.6@npm:vue@2.6.11
 npm install vue3@npm:vue@3.4.34
 ```
 
 3. Switch between Vue versions:
 ```bash
-# Switch to Vue 2.6
-v-cast 2 vue2.6
-vue-demi-switch 2
-
 # v-cast <version> <alias>
 v-cast 2.7 vue2.7
-vue-demi-switch 2.7
+vue-demi-switch 2.7 vue2.7
 
 # Switch to Vue 3
 v-cast 3 vue3
-vue-demi-switch 3
+vue-demi-switch 3 vue3
 ```
 
 4. Import Vue in your code, use it as usual:
@@ -85,6 +81,11 @@ To solve this problem, you could install different versions of Vue in different 
 
 Thus, `vue-caster` was created. It is a proxy tool for Vue that can be used as different versions of Vue. Since it is installed as the name "vue" at the package level, the aforementioned path conversion issues are resolved.
 
+## TODO
+- [ ] Issue when direct vue import in vue-demi (entry not found: ./dist)
+- [ ] vue-test-utils type error
+- [ ] vite-plugin-dts cannot rollup types.
+- [ ] There are still some of vue exports not be handled.
 
 ## License
 MIT
