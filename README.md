@@ -6,7 +6,7 @@
   - [TODO](#todo)
   - [License](#license)
 
-This is a command line tool that can switch between Vue versions. It can be used in conjunction with [vue-demi](https://github.com/vueuse/vue-demi) for developing components compatible with both Vue 2 and Vue 3.
+This is a command line tool that can switch between Vue versions. It can be used in conjunction with [vue-demi](https://github.com/vueuse/vue-demi) for developing components for Vue 2 and Vue 3.
 
 ## How this works?
 The way this package works is by using [npm install alias](https://docs.npmjs.com/cli/v8/commands/npm-install). 
