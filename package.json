@@ -38,7 +38,7 @@
     "v2",
     "v3",
     "v2.7",
-    "pacakge.caster.json"
+    "package.caster.json"
   ],
   "bin": {
     "v-cast": "bin/v-cast.js"

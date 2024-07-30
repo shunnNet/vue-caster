@@ -1,16 +1,16 @@
 {
   "exports": {
     ".": {
-      "types": "./demi/index.d.ts",
-      "require": "./demi/index.cjs",
-      "import": "./demi/index.mjs",
-      "browser": "./demi/index.mjs"
+      "types": "./caster/index.d.ts",
+      "require": "./caster/index.cjs",
+      "import": "./caster/index.mjs",
+      "browser": "./caster/index.mjs"
     },
     "./compiler-sfc": {
       "types": "./compiler-sfc/index.d.ts",
       "import": "./compiler-sfc/index.mjs",
       "require": "./compiler-sfc/index.js"
     },
-    "./package.json": "./package.demi.json"
+    "./package.json": "./package.caster.json"
   }
 }
