@@ -1,14 +1,21 @@
 {
   "name": "vue-caster",
   "version": "0.1.0",
-  "description": "",
+  "description": "Command line tool that can switch Vue versions.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vue",
+    "vue-demi"
+  ],
+  "author": "shunnNet <wendell20904102@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunnNet/vue-caster"
+  },
+  "license": "MIT",
   "exports": {
     ".": {
       "types": "./caster/index.d.ts",
