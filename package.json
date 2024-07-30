@@ -1,0 +1,45 @@
+{
+  "name": "vue-caster",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "types": "./caster/index.d.ts",
+      "require": "./caster/index.cjs",
+      "import": "./caster/index.mjs",
+      "browser": "./caster/index.mjs"
+    },
+    "./compiler-sfc": {
+      "types": "./compiler-sfc/index.d.ts",
+      "import": "./compiler-sfc/index.mjs",
+      "require": "./compiler-sfc/index.js"
+    },
+    "./package.json": "./package.caster.json"
+  },
+  "files": [
+    "caster",
+    "compiler-sfc",
+    "bin",
+    "scripts",
+    "v2",
+    "v3",
+    "v2.7",
+    "pacakge.caster.json"
+  ],
+  "bin": {
+    "v-cast": "bin/v-cast.js"
+  },
+  "devDependencies": {
+    "@vue/composition-api": "^1.7.2",
+    "vue2": "npm:vue@2.6.11",
+    "vue2.7": "npm:vue@2.7.16",
+    "vue3": "npm:vue@3.4.34"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "exports": {
+    ".": {
+      "types": "./demi/index.d.ts",
+      "require": "./demi/index.cjs",
+      "import": "./demi/index.mjs",
+      "browser": "./demi/index.mjs"
+    }
+  }
+}
